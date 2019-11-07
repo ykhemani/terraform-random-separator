@@ -8,7 +8,3 @@ resource "random_string" "separator" {
   lower   = false
   number  = false
 }
-
-output "separator" {
-  value = random_string.separator.result
-}
