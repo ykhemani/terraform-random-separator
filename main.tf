@@ -14,8 +14,8 @@ resource "random_string" "separator" {
     uuid = uuid()
   }
   length  = data.terraform_remote_state.random-length.outputs.integer
-  special = true
-  upper   = false
-  lower   = false
-  number  = false
+  special = false
+  upper   = true
+  lower   = true
+  number  = true
 }
